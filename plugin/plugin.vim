@@ -17,4 +17,4 @@ function! BetterFoldText()
 endfunction
 " }}} BetterFoldText ❮
 
-set foldtext=MyFoldText()
+set foldtext=BetterFoldText()
