@@ -16,3 +16,5 @@ function! BetterFoldText()
   return line . l:start_text . l:fill . l:endtext
 endfunction
 " }}} BetterFoldText ❮
+
+set foldtext=MyFoldText()
