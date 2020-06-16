@@ -1,6 +1,6 @@
 " {{{ BetterFoldText ❯
-function! BetterFoldText()
-  let line = getline(v:foldstart)
+function! BetterFoldText(...)
+  let l:line = get(a:, 1, getline(v:foldstart))
   let nucolwidth = &fdc + &number * &numberwidth
   let windowwidth = winwidth(0) - nucolwidth - 3
   let foldedlinecount = v:foldend - v:foldstart
